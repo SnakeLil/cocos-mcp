@@ -1,0 +1,31 @@
+{
+  "name": "cocos-mcp",
+  "version": "0.1.0",
+  "description": "MCP server extension for Cocos Creator 2.x",
+  "author": "OpenAI Codex",
+  "license": "MIT",
+  "main": "main.js",
+  "main-menu": {
+    "Panel/Cocos MCP 2.x": {
+      "message": "cocos-mcp:open-panel"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "Cocos MCP 2.x",
+    "width": 420,
+    "height": 520,
+    "min-width": 360,
+    "min-height": 320
+  },
+  "scene-script": "scene.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -w -p tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.57",
+    "typescript": "^5.8.3"
+  }
+}
